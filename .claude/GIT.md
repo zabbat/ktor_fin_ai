@@ -26,9 +26,21 @@ I'm ready to push the following to origin/main:
 Should I proceed with the push?
 ```
 
+## Branch Strategy
+
+- **main**: Production branch
+- **develop**: Development branch
+- **feature/...**: Feature branches (e.g., `feature/user-auth`, `feature/etf-flows`)
+
+## Commit Confirmation
+
+Before committing to **main** or **develop**, always ask the user:
+- Confirm this is the correct branch for the changes
+- Offer to create a new feature branch instead if appropriate
+
 ## Other Git Operations
 
-- **Commits**: Agents can create commits without asking (unless configured otherwise)
+- **Commits**: Agents can create commits on feature branches without asking
 - **Branches**: Agents can create and switch branches locally without asking
 - **Pull/Fetch**: Agents can pull and fetch without asking
 - **Force push**: Never use `--force` without explicit user request and confirmation
